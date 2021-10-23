@@ -22,7 +22,6 @@
         <div class="titulo-4">
             <h2>Productos Destacados</h2>
         </div>
-        <div class="contenedor-2">
           <div class="container-1"> 
             <% JSONBody.forEach(juegos =>{ %>
 
@@ -33,12 +32,12 @@
                         <div>
                              <h6><%= juegos.name %></h6>
                              <p><%= juegos.description %></p>
-                            <p><%= juegos.description2 %></p> 
+                             <p><%= juegos.description2 %></p> 
                              
                         </div>
                     </div>
                     <% }) %>       
-                    
+          </div>    
     </section>
 <section>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -76,7 +75,7 @@
     <section class="datos" id="datos">  
         <div class="subtitulo-1"><h6>-COMPLETA TUS DATOS-</h6></div>
          <div>
-        <div class="datos-1">    <form method="POST" action="enviar2.php" >
+        <div class="datos-1">    <form method="POST" action="enviar.php" >
         <input type="text" name="nombre" placeholder="nombre" maxlength="20">
       <input type="" name="apellido" placeholder="apellido" maxlength="40">
       <input type="email" name="correo" placeholder="correo electronico" maxlength="100">
